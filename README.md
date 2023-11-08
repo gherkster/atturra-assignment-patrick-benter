@@ -24,7 +24,7 @@ Contains the unit tests written against the calculator app project. These are fa
 
 # Decisions / Assumptions
 
-- `decimal` was chosen as the underlying data type for money mainly be of the precision issues with `float`/`double`. I experimented with a `Money` domain model to model money in a more appropriate way, but I found this quickly got in the way than it helped with all the operator overloading and multiplication with other types.
+- `decimal` was chosen as the underlying data type for money because of the precision issues with `float`/`double`. I experimented with a `Money` domain model to model money in a more appropriate way, but I found this quickly got in the way more than it helped with all the operator overloading and multiplication with other types.
 
 - I made all the injected services singletons since they're all thread safe, but for this app there's no difference since the lifecycle doesn't change.
 
